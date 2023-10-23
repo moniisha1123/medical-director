@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Online Consultancy</title>
+</head>
+<style> @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+    body {
+        
+    
+         font-family: 'Quicksand', sans-serif;
+        margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    animation: fadeIn 1s ease-in-out;
+    background-image:url(consul.jpg);
+    background-size: cover;
+    font-weight:bold;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #0f5964;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    animation: slideInDown 1s ease-in-out;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.service {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #226d80;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #236e74;
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #0e6a7d;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: slideInUp 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+h2{
+    color:  rgb(32, 46, 59);
+  font-weight:bold;
+  font-size:25px;
+  text-align: center;
+  padding-right:0px;
+  
+  text-shadow: 0 0 3px #7dc3e3, 0 0 5px #273d40;
+}
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Online Consultancy Services</h1>
+        </header>
+
+        <section class="services">
+            <div class="service">
+                
+                <h2>MediBuddy</h2>
+                <p>MediBuddy offers the convenience of online doctor consultations, allowing you to receive medical advice and treatment from the comfort of your own home.</p>
+                <a href="https://www.medibuddy.in/doctors/online-consultation" class="btn">Learn More</a>
+            </div>
+            <div class="service">
+                
+                <h2>Practo</h2>
+                <p>Online Doctor Consultations with 20000+ Doctors through chat, call & get answers to all your medical issues online. </p>
+                <a href="https://www.practo.com/consult" class="btn">Learn More</a>
+            </div>
+            <div class="service">
+        
+                <h2>Apollo 247</h2>
+                <p>Online doctor consultation in 15 mins with 1000+ Top Specialist Doctors. Video Call or Chat with a Doctor from 100+ Specialties including General Physicians ...</p>
+                <a href="https://www.apollo247.com/specialties" class="btn">Learn More</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Online Consultancy Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

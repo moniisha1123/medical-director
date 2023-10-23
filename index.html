@@ -1,0 +1,213 @@
+<html> 
+    <head><title>medical director</title>
+      </head><style>
+      
+
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+    button{
+        background-color: rgb(34, 55, 101);
+        border-radius:5px;
+        color:white;
+        float:right;
+        height:30px;
+  width:60px;
+  font-size:18px;
+    }
+   
+    
+    button:hover{
+      background-color: #75bcb9;
+  transform: scale(1.4);
+  border-radius:30px;
+  color:rgb(34, 83, 88);
+  border:0;
+  
+}
+ .image1{
+        float:left;
+       
+
+    }
+
+.item1{
+  grid-area:h;
+  
+  border-radius:20px;
+  background: rgb(179,210,211);
+background: radial-gradient(circle, rgba(179,210,211,1) 0%, rgba(205,247,249,1) 49%, rgba(148,187,233,1) 100%);
+
+}
+.item2{
+  grid-area:m;
+
+padding-bottom:20px;
+border-radius:25px;
+  }
+.item3{
+  grid-area:mm;
+  background-image: url(1doc.jpg);
+  
+  margin-left:20px;
+  box-shadow:2px 1px 20px 2px  rgb(96, 111, 124);
+
+}
+.item4{
+  grid-area:ff;
+  padding-right: 0;
+  margin-right: 20px;
+  
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas:
+  'h h h h h h'
+  'm m m m m m'
+  'mm mm mm mm mm ff';
+  
+}
+@media (max-width:600px) {
+  .grid-container {
+    display:flex;
+    grid-template-areas:
+      'h'
+      'm'
+      'mm'
+      'f';
+  }
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding:5px;
+  overflow: hidden;
+  font-size: 20px;
+ background-color:  rgb(68, 93, 116);
+  border-radius:20px;}
+  li{
+    float:left;
+  }
+
+li a {
+  display: block;
+  color:rgb(252, 253, 254);
+  text-align: center;
+  padding: 14px 16px;
+  border:3px solid  rgb(68, 93, 116); 
+  text-decoration: none;
+  background-color: #5aa5a2;
+}
+
+li a:hover:not(.active) {
+  background-color: #75bcb9;
+  transform: scale(1.1);
+  border-radius:30px;
+}
+
+.heading{
+ text-align: center;
+  font-weight:bold;
+  font-size:36px;
+  color:  rgb(68, 93, 116);
+  text-decoration-line:underline;
+  text-shadow: 0 0 3px #f5f7f7, 0 0 5px #082b2f;
+ /** background: rgb(67,131,142);
+background: linear-gradient(90deg, rgba(67,131,142,1) 0%, rgba(106,158,163,1) 18%, rgba(118,174,189,1) 22%, rgba(135,176,185,1) 33%, rgba(194,220,226,1) 57%,
+ rgba(181,222,230,1) 70%, rgba(139,177,184,1) 100%, rgba(173,201,207,1) 100%, rgba(0,212,255,1) 100%);
+ background: rgb(67,131,142);**/
+ background: rgb(179,210,211);
+background: radial-gradient(circle, rgba(179,210,211,1) 0%, rgba(205,247,249,1) 49%, rgba(148,187,233,1) 100%);
+
+}
+table{
+  padding:15px;
+}
+body{
+  background: rgb(179,210,211);
+background: radial-gradient(circle, rgba(179,210,211,1) 0%, rgba(205,247,249,1) 49%, rgba(148,187,233,1) 100%);
+ 
+ font-family: 'Quicksand', sans-serif;
+}
+.inside{
+  color:  rgb(32, 46, 59);
+  font-weight:bold;
+  font-size:25px;
+  text-align: center;
+  padding-right:0px;
+  
+  text-shadow: 0 0 3px #7dc3e3, 0 0 5px #273d40;
+  }
+ .liss{
+  text-decoration: none;
+  color:white;
+ font-size: 22px;
+ font-weight:bold;
+
+ }
+
+
+</style>
+    <body>
+      <div class="grid-container"><div class=
+        "item1"><div class="head">
+  <div class="image1"><img src="logo1.jpg.png" style="width:100px;height:90px;"> </div> <div class="heading">MEDICAL DIRECTOR </div>
+  
+  
+  
+     <img src="unknown.jpg" style="float:right; width:55px;height:50px;"> <div style="float:right;padding-right:60px; font-size:20px;">Select your location &nbsp;&nbsp;
+        
+
+       <button onclick="getLocation()">here</button></div></div></div>
+      <div class="item2"><ul>
+        
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li style="float:right;"><a href="login.html">login</a></li>
+        
+      </ul></div><div class="item3">
+        <table>
+        <tr><td><h2 class="inside">YOUR HEALTH.OUR PASSION.DISCOVER REGIONAL ONE HEALTH</h2></td></tr>
+          <tr><td><img src="2doc.jpg" height="260px" width="400px"></td><td>
+        <div class="liss"> 
+      
+          <a href="home.html"><li>Top 10 Hospitals</li></a>
+          <a href="merits.html"><li>Benefits of Allopathy</li></a>
+         <a href="daily.html"><li>Daily NEWS about allopathy..</li></a>
+         <a href="store.html"><li>Online Medical Stores</li></a>
+         <a href="consul.html"><li>Famous Online Consultancies</li></a>
+        </div>
+          </td></tr>
+
+        
+      
+ </table>
+      </div>
+  <div class="item4"><img src="doc1.jpg">
+  </div></div>
+      </div>
+      
+    
+    
+       
+       <p id="demo"></p>
+        
+       <script>
+       var x = document.getElementById("demo");
+       
+       function getLocation() {
+         if (navigator.geolocation) {
+           navigator.geolocation.getCurrentPosition(showPosition);
+         } else { 
+           x.innerHTML = "Geolocation is not supported by this browser.";
+         }
+       }
+       
+       function showPosition(position) {
+         x.innerHTML = "Latitude: " + position.coords.latitude + 
+         "<br>Longitude: " + position.coords.longitude;
+       }
+       
+       </script>
+       
+    </body>
+</html>

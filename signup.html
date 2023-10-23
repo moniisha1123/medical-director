@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: rgb(67,131,142);
+background: linear-gradient(90deg, rgba(67,131,142,1) 0%, rgba(32,162,175,1) 8%, rgba(118,174,189,1) 22%, rgba(135,176,185,1) 33%, rgba(194,220,226,1) 
+57%, rgba(181,222,230,1) 70%, rgba(139,177,184,1) 100%, rgba(173,201,207,1) 100%, rgba(0,212,255,1) 100%);
+            
+    margin: 0;
+    padding-top:40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-image: url(login1.jpg);
+    
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(34, 55, 101);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="signup-form">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="login-link">
+            <p>Already have an account? <a href="index.html">Login</a></p>
+        </div>
+    </div>
+
+    <script src="script.js">
+        document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('signup-form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+
+        // You can add validation logic here to check if the passwords match, etc.
+        
+        // For this example, we'll just display the entered data.
+        alert(`Full Name: ${name}\nEmail: ${email}\nPassword: ${password}`);
+    });
+});
+
+    </script>
+</body>
+</html>
